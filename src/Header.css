@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background: rgba(0, 0, 0, 0.729); /* mờ mờ nền mây */
+  backdrop-filter: blur(6px);
+  color: #fff3f3;
+  z-index: 10;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header a {
+  text-decoration: none;
+  color: #f4efef;
+  font-weight: bold;
+}

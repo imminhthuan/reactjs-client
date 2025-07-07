@@ -1,15 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import React, { StrictMode } from "react";
+import Apps  from "./Apps.js";
 
-import App from "./components/App";
-import Credit from "./components/Credit";
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(
+const root = createRoot(document.getElementById("root"));
+root.render(
   <StrictMode>
-    <App />
-    <Credit />
-  </StrictMode>,
-  rootElement
+    <Apps />
+  </StrictMode>
 );

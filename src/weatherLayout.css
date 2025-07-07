@@ -1,0 +1,60 @@
+.weather-container {
+    display: flex;
+    /* sắp xếp theo hàng ngang */
+    gap: 20px;
+    /* khoản cách của các khối */
+    flex-wrap: wrap;
+    /* nếu quá chiều rộng thì xuống hàng */
+    justify-content: center;
+    /* căn giữa nội dung */
+    margin-top: 80px;
+    padding: 0 20px;
+}
+
+/* Cột bên trái (dài hơn, chứa nhiều block) */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    max-width: 600px;
+}
+
+/* Cột bên phải: quảng cáo */
+.right-column {
+    width: 300px;
+    align-self: flex-start;
+    /* giúp cho nó ở đầu và không bị kéo theo cột bên trái*/
+}
+
+
+/* Box thời tiết */
+.weather-info {
+    padding: 20px;
+    border-radius: 10px;
+    background: #f0f8ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Quảng cáo */
+.weather-ads {
+    padding: 10px;
+    background-color: #eef2f3;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 400px;
+    height: auto;
+    /* tự động theo nội dung */
+    max-height: 800px;
+    /* giới hạn chiều cao */
+    overflow: hidden;
+    /* ẩn nếu ảnh quá lớn */
+
+}
+
+.weather-ads img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover; /* giúp ảnh vừa khít mà không bị méo */
+}
